@@ -1,0 +1,84 @@
+body{
+	background: skyblue;
+}
+.contenedor{
+	margin: 0 auto;
+	width: 60px;
+	font-family: sans-serif;
+}
+.transicion{
+	transition:.3s; /* afectando al tiempo y lo que es a transition-property:opacity; y transition-timing-function: ease; vienen por defecto*/
+	/*transition:.5s opacity ease;una anotacion mas general en donde puede afectar a transition-duration, transition-propert y transition-timing-function*/
+	/*transition: ;*/
+	/*duracion aceleraciones propiedades esas son las propiedades de la transicion ahora lo anotamos así:*/
+/*	transition-duration:.5s;
+*/	/*transition-property:opacity;*/ /*propiedades a las que yo quiero afectar*/
+	/*background-color:;
+	background-position: ;
+	background-size:;
+	border-color: ;
+	border-width: ;
+	color: ;
+	border-radius: ;
+	font-size: ;
+	font-weight: ;
+	height width
+	left right bottom top;
+	padding: ;
+	opacity: ;*/
+	/*transition-timing-function: ease;*/ /*puede tener aceleracion hacía ambos lados, al entrar,al final o entrada y salida o linear.puede checar en Aceleraciones: https://matthewlein.com/ceaser/*/
+
+}
+.caja{
+	width: 200px;
+	height: 200px;
+	border: 1px solid red;
+}
+.opacity{ /*todos los elementos de nuestro contenido tiene un opacidad por defecto de 1*/
+	opacity: 0;
+}
+.opacity:hover{
+	opacity: 1;
+}
+.fuente:hover{
+	font-size: 20px;
+	font-weight: 600 ;
+
+}
+.color:hover{
+	color: red;
+	background: yellow;
+
+}
+.rotacion:hover{
+	transform: rotate(360deg);
+}
+.escala:hover{
+	/*los valores van de 0 1 como el de opacidad*/
+	transform: scale(2);
+
+}
+.sesgado:hover{
+	transform: skew(45deg);
+
+}
+
+body{
+	perspective: 1000px;
+}
+
+.traslacion:hover{
+	/*debene de tener un eje x, y o z osea esto puede ser en 3D*/
+	/*transform: translateX(50px);*/
+	/*Para que reciba los tre valores se tiene que poner:*/
+	transform: translateZ(50px); /*Para que nosotros miremos en el navegador la tranfomación de los tres tanto x como y como z
+	debemos de colocar una prespectiva como lo haremos:
+
+body{
+	perspective: 1000px;
+} pero esto está colado arriba de translacion:hover*/ 
+	
+}
+.mixtas:hover{
+	transform: rotate(45deg) scale(2) skew(45deg) translateX(50px);
+}
